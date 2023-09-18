@@ -102,7 +102,7 @@ a:hover{
 }
 
 .each_tasksbox{
-  width:25rem ;
+  width:25rem;
   font-size: 1em;
   border: 1px solid black;
   background-color: #E5D283;
@@ -140,11 +140,19 @@ input[type=checkbox]:checked + .added_tasks{
   background-color: #7D7463;
 }
 
-@media (min-width:480px){
+@media (max-width:460px){
   .container{
-    width:auto;
+    width:85%;
   }
   .heading{
     width:80%;
+  font-size: 1.5em; 
+   }
+  .each_tasksbox{
+    width:20rem;
+  } 
+  .inputbox{
+    width: 15rem;
   }
+  
 }
