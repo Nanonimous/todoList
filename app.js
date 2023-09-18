@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 let taskList_home = [];
 let taskList_work = [];
@@ -73,6 +73,6 @@ app.post("/add_work",(req,res)=>{
   res.redirect("/work");
 });
 
-app.listen(process.env.port,()=>{
+app.listen(PORT,()=>{
   console.log("server is working fine ... ");
 });
