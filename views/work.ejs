@@ -1,0 +1,28 @@
+<%- include("partials/header_work.ejs") %>
+
+
+<!-- forms -->
+
+<div class="forms_box">
+  <div class="heading"> work </div>
+  <% if(locals.tasks_work){%>
+    <% for(var i= 0;i<tasks_work.length; i++ ){ %>
+      <div class="each_tasksbox">
+        <input type="checkbox" name="strike" class="check_box" >
+        <p class="added_tasks">
+          <%=tasks_work[i]%>
+        </p>
+      </div>
+    <%}%>
+  <%}%>
+
+  <form action="/add_work" method="post">
+    <div class="sub_con">
+      <input type="text" name="task_work" class="inputbox">
+  <input type="submit" class="submitbutton">
+    </div>
+  
+  </form>
+</div>
+
+<%- include("partials/footers.ejs") %>

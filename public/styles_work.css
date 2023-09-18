@@ -1,0 +1,148 @@
+*{
+  background-color: #F05454;
+  padding: 0;
+  margin: 0;
+  
+}
+li{
+  list-style: none;
+  background-color: #EEE2DE;
+}
+
+.container{
+  display: flex;
+  width: 95.5%;
+  position:sticky;
+  gap: 2rem;
+  top:0;
+  height: 2em;
+  margin: 10px;
+  font-size: 1.3rem;
+  background-color: #EEE2DE;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-top: 1em;
+  box-shadow: 5px 5px 5px black;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  background-color: #EEE2DE;
+  transition-property:box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  display: inline;
+}
+a:hover{
+  box-shadow: -6px 5px black;
+  
+}
+
+.inputbox{
+  width: 20rem;
+  height: 2.2em;
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  border-bottom: 2px solid black;
+  padding:5px;
+}
+
+.inputbox:hover{
+  border: 2px solid black;
+  box-shadow: -3px 3px black;   
+}
+
+.submitbutton{
+   width: 4rem;
+  height: 1.8em;
+  font-size: 1em;
+  padding:5px;
+  border: none;
+  outline: none;
+  background-color: #A8A196;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.submitbutton:hover{
+  background-color:#F05454;
+  color: white;
+  box-shadow: -3px 3px black; 
+}
+
+.sub_con{
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+.heading{
+  background-color: #222831;
+  width:35rem;
+  margin-bottom:2em ;
+  color: white;
+  justify-content: center;
+  height: 2.7rem;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px black;
+
+}
+
+
+.forms_box{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.each_tasksbox{
+  width:25rem ;
+  font-size: 1em;
+  border: 1px solid black;
+  background-color: #E5D283;
+}
+
+input[type="checkbox" ] {
+  margin: 20px;
+  width: 13px;
+  height: 13px;
+
+}
+input[type=checkbox]:checked + .added_tasks{
+  text-decoration: line-through;
+  opacity: 0.6;
+  filter: blur(0.3px);
+}
+.added_tasks{
+  display: inline;
+  background-color:  #E5D283;
+  width: 100%;
+  height: 3rem;
+  font-size: 2em;
+  text-align: center;
+  
+}
+
+.footers{
+  height: 6em;
+  text-align: center ;
+  padding-top: 5rem;
+  margin-top: 1em;
+  margin-bottom: 0;
+  background-color: #7D7463;
+}
+
+@media (min-width:480px){
+  .container{
+    width:auto;
+  }
+  .heading{
+    width:80%;
+  }
+}
